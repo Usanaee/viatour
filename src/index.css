@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+body {
+  background-color: #f5f5f5;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  height: 35px;
+  width: 35px;
+  background-color: #f8312f;
+  border-radius: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-66 {
+  width: 66%;
+}
+.w-49 {
+  width: 49%;
+}
+.w-45 {
+  width: 45%;
+}
+.over-underline{
+  text-decoration: line-through 
+
+}
+.table-head-style {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider;
+}
+.table-row-style {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+.main-container {
+  @apply px-24 max-sm:px-12;
+}
+.container {
+  @apply px-16 max-sm:px-8 py-14;
+}
+input[type="checkbox"]:checked {
+  background-color: #eb662b;
+}
+
+.nav-item-style {
+  @apply text-gray-700 hover:duration-100 hover:text-orange-600;
+}
+.nav-item-style-m {
+  @apply text-white hover:duration-100 hover:text-orange-600;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.scale-hover:hover {
+  transform: scale(2.2);
+  transition: transform 0.3s ease-in-out;
+}
+.fotter-hover {
+  @apply hover:text-[#4A43C4] duration-200 cursor-pointer text-slate-600 text-sm font-medium;
+}
+
+
+.max-width{
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 100px; */
+  margin: 0 auto;
+}
+
+.slick-slide > div {
+  margin-right: 16px; /* Adjust the value as needed */
+}
+.m-b{
+  margin-bottom: 64px;
+}
+.background-avatar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  opacity: 0.2;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-0 { top: 10%; left: 15%; }
+.avatar-1 { top: 20%; right: 15%; }
+.avatar-2 { bottom: 15%; left: 10%; }
+.avatar-3 { bottom: 20%; right: 10%; }
+
+.border-b-r{
+  border-bottom-right-radius: 16px;
+}
+.border-t-r{
+  border-top-right-radius: 16px;
+}
+.border-t-l{
+  border-top-left-radius: 16px;
+}
